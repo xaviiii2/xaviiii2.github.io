@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Receptes de cuina</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+    <header>
+        <h1>Receptes de cuina casolanes</h1>
+    </header>
+
+    <nav>
+        <a href="#postres">Postres</a>
+        <a href="#tapes">Tapes</a>
+        <a href="#vegetarians">Vegetarians</a>
+        <a href="#menu">Demanar menú</a>
+    </nav>
+
+    <main>
+        <section id="postres">
+            <article>
+                <h2>Canolli de Sicília</h2>
+                <p>El postre més popular de Sicília.</p>
+            </article>
+        </section>
+
+        <section id="tapes">
+            <article>
+                <h2>Patates braves</h2>
+                <p>Una tapa tradicional molt coneguda.</p>
+            </article>
+        </section>
+
+        <section id="vegetarians">
+            <article>
+                <h2>Ensalada Saludable</h2>
+                <p>Una recepta fresca amb verdures.</p>
+            </article>
+        </section>
+
+        <section id="menu">
+            <h2>Demana el teu menú online</h2>
+
+            <form>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="plat">Tria el menú:</label>
+                <select id="plat" name="plat">
+                    <option>Canolli de Sicília</option>
+                    <option>Patates braves</option>
+                    <option>Amanida saludable</option>
+                </select>
+
+                <label for="quantitat">Quantitat:</label>
+                <input type="number" id="quantitat" name="quantitat" min="1" value="1">
+
+<fieldset>
+    <legend>Datos de entrega</legend>
+
+    Nombre <input type="text" name="nombre"><br>
+    Dirección <input type="text" name="direccion"><br>
+    Teléfono <input type="tel" name="telefono"><br>
+
+    Instrucciones especiales<br>
+    <textarea name="instrucciones" rows="10" cols="40"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Método de pago</legend>
+
+    <select name="pago">
+        <option>Efectivo</option>
+        <option>Tarjeta</option>
+    </select>
+</fieldset>
+
+
+</form>
+
+                <button type="submit">Demanar menú</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Xavi Durá Ferrer © 2026</p>
+    </footer>
+
+</body>
+</html>
